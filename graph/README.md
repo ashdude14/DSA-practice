@@ -46,10 +46,12 @@ key->List
 ```
 ## Graph Traversal 
 1. Breadth First Search (BFS)
+```
 --> level order traversal
 step : 
 -> Go to Source
 -> Mark visted
 -> Go to Neighbours, Mark visited and Print
 --> Uses Queue Data Structure
+```
 
