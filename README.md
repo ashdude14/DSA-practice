@@ -1,4 +1,4 @@
-# This repository has different more than one branch 
+# This repository has more than one branch check it out!
 ## To run program
 type following command on terminal
 
