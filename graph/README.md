@@ -13,7 +13,8 @@ Real Life example of graph usage-
 10. Point Bucket Tool/ Connected Components
 
 ## Graph Representation
-1. 2 - D matrix
+```
+ 1. 2 - D matrix
 ......................
     0   1    2    3
 ......................
@@ -41,3 +42,5 @@ key->List
 2-->1,3         2. Memory Efficient Worst Case O(E)
 3-->2
 ...........
+
+```
