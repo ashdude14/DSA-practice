@@ -81,4 +81,4 @@ procedure DFS_iterative(G, v) is
         else
             S.pop()
 ```
-
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](ash )
