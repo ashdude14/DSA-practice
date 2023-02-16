@@ -55,7 +55,7 @@ key->List
 Starts with source and explores all the nodes which are neighbours before backtraking.
 
 Non recursive implementation O(E) 
-
+```
 procedure DFS_iterative(G, v) is
     let S be a stack
     S.push(v)
@@ -66,8 +66,8 @@ procedure DFS_iterative(G, v) is
             for all edges from v to w in G.adjacentEdges(v) do 
                 S.push(w)
 
-
-
+```
+```
 procedure DFS_iterative(G, v) is
     let S be a stack
     label v as discovered
@@ -80,5 +80,5 @@ procedure DFS_iterative(G, v) is
                 S.push(iterator of G.adjacentEdges(w))
         else
             S.pop()
-
+```
 
