@@ -51,4 +51,6 @@ key->List
 
 --> Uses Queue Data Structure
 ```
+2. Depth First Search
+Starts wuth source and explores all the nodes which are neighbours before backtraking.
 
