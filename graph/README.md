@@ -52,5 +52,33 @@ key->List
 --> Uses Queue Data Structure
 ```
 2. Depth First Search
-Starts wuth source and explores all the nodes which are neighbours before backtraking.
+Starts with source and explores all the nodes which are neighbours before backtraking.
+
+Non recursive implementation O(E) 
+
+procedure DFS_iterative(G, v) is
+    let S be a stack
+    S.push(v)
+    while S is not empty do
+        v = S.pop()
+        if v is not labeled as discovered then
+            label v as discovered
+            for all edges from v to w in G.adjacentEdges(v) do 
+                S.push(w)
+
+
+
+procedure DFS_iterative(G, v) is
+    let S be a stack
+    label v as discovered
+    S.push(iterator of G.adjacentEdges(v))
+    while S is not empty do
+        if S.peek().hasNext() then
+            w = S.peek().next()
+            if w is not labeled as discovered then
+                label w as discovered
+                S.push(iterator of G.adjacentEdges(w))
+        else
+            S.pop()
+
 
