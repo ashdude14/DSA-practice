@@ -54,6 +54,11 @@ key->List
 2. Depth First Search
 Starts with source and explores all the nodes which are neighbours before backtraking.
 
+explanation link :-
+https://jamboard.google.com/d/1kqMuSUcji_LqKSCbF7p3F0OUt3rlsFdZ20-4s54Uk4Q/edit?usp=sharing
+
+
+
 Non recursive implementation O(E) 
 ```
 procedure DFS_iterative(G, v) is

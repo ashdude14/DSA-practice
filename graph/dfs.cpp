@@ -50,6 +50,29 @@ Graph(int V)
         dfs_helper(src,m);
 
     }
+    void dfs_using_stack(int src)
+    {
+        std::stack<int> s;
+        std::map<int,bool> vis;
+        for(int i=0;i<V;i++)
+        vis[i]=false;
+
+        
+        s.push(src);
+       
+        while(!s.empty())
+        {
+            int v=s.top();
+             s.pop();
+            if(!vis[v]){
+            cout<<v;
+            vis[v]=true;
+            for(int i : l[v])
+            if(!vis[i])
+            s.push(i);}
+
+        }
+    }
      void showGraph()
     {
         for(int i=0;i<V;i++)
@@ -77,6 +100,8 @@ int main()
     //0 -> 1, 0 -> 2, 1 -> 2, 2 -> 0, 2 -> 3, 3 -> 3 
     //g.showGraph();
     g.dfs(0);
+    cout<<" using stack : ";
+    g.dfs_using_stack(0);
     g1.addEdge(0,1);
     g1.addEdge(0,2);
     g1.addEdge(1,2);
