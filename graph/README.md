@@ -53,7 +53,10 @@ key->List
 ```
 2. Depth First Search
 Starts with source and explores all the nodes which are neighbours before backtraking.
-
+there are two commonly used procedure to implement DFS 
+1. Recursive Call 
+2. Iterative (Using Stack)
+check it out explanation here : -
 explanation link :-
 https://jamboard.google.com/d/1kqMuSUcji_LqKSCbF7p3F0OUt3rlsFdZ20-4s54Uk4Q/edit?usp=sharing
 
