@@ -59,9 +59,10 @@ There are two commonly used procedure to implement DFS
 2. Iterative (Using Stack)
 check it out explanation here : -
 explanation link :-
+```
 https://jamboard.google.com/d/1kqMuSUcji_LqKSCbF7p3F0OUt3rlsFdZ20-4s54Uk4Q/edit?usp=sharing
 
-```
+
 Non recursive implementation O(E) 
 ```
 procedure DFS_iterative(G, v) is
