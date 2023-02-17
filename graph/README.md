@@ -91,3 +91,14 @@ procedure DFS_iterative(G, v) is
             S.pop()
 ```
 <video src="https://github.com/ashdude14/DSA-practice/blob/master/graph/dfsexplanation.webm" width="100%"> </video>
+
+## Travelling Salesman Problem
+## Cycle Detection In Graph
+## Dijkstra Algorithm
+## Toplogical Sort
+## Total No of Spanning Tree in a graph
+## Kruksal Algorithm
+## Prim Algorithm
+## Bellman Ford Algorithm
+## Floyd Warshall Algorithm
+## Kosaraju Algo
