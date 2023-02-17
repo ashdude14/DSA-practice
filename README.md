@@ -1,4 +1,7 @@
 # This repository has more than one branch check it out!
+branch name - 
+1. main 
+2. master
 ## To run program
 type following command on terminal
 
