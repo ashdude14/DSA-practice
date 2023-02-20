@@ -93,6 +93,25 @@ procedure DFS_iterative(G, v) is
 <video src="https://github.com/ashdude14/DSA-practice/blob/master/graph/dfsexplanation.webm" width="100%"> </video>
 
 ## Travelling Salesman Problem
+Idea is to travel all the cities from source and has to back to the source with minimizing distance.
+Result will be a Hamiltonion Cycle.
+Hamiltonion Cycle :- set of edges such that all node visited once and back to starting node.
+Naive - O(n!)
+eg- A--B--C--D--A
+Implemantaion Using 2 D array.
+two methods - 1) Using recurssion.
+              2)Top- Down Dynamic Programming
+              (Recurssion with  Memoization).
+
+We use bit masking to store visited cities.
+eg - cities        A B C D
+     starting bit  0 0 0 0
+     Visited A     1 0 0 0
+     Visited B     1 1 0 0
+     Visited C     1 1 1 0
+     Visied  D     1 1 1 1
+     here, mask = (1<<n)-1, where n=4.
+
 ## Cycle Detection In Graph
 ## Dijkstra Algorithm
 ## Toplogical Sort
