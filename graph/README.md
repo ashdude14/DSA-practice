@@ -137,9 +137,7 @@ int dp[2^n][n];
 And initially we will initialize dp with -1;
 
 and if the state is revisited we will return dp[mask][pos];
-
-
-
+Time Complexity will be O(2^n).
 
  ``` 
 
