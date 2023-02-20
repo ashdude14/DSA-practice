@@ -95,6 +95,8 @@ procedure DFS_iterative(G, v) is
 ## Travelling Salesman Problem
 Idea is to travel all the cities from source and has to back to the source with minimizing distance.
 Result will be a Hamiltonion Cycle.
+
+```
 Hamiltonion Cycle :- set of edges such that all node visited once and back to starting node.
 Naive - O(n!)
 eg- A--B--C--D--A
@@ -111,6 +113,8 @@ eg - cities        A B C D
      Visited C     1 1 1 0
      Visied  D     1 1 1 1
      here, mask = (1<<n)-1, where n=4.
+
+ ``` 
 
 ## Cycle Detection In Graph
 ## Dijkstra Algorithm
