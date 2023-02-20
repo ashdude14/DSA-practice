@@ -142,6 +142,15 @@ Time Complexity will be O(2^n).
  ``` 
 
 ## Cycle Detection In Graph
+```
+If there is more than one way to visit any node it contains cycle.
+
+Two methods to implement -
+1. Using BFS.
+2. Using DFS.
+
+
+```
 ## Dijkstra Algorithm
 ## Toplogical Sort
 ## Total No of Spanning Tree in a graph
