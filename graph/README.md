@@ -115,6 +115,32 @@ eg - cities        A B C D
      here, mask = (1<<n)-1, where n=4.
 
 Implementation Program  File name- (tsp.cpp)
+
+So in the recursion problem time complexity is O(n!).
+We can optimize using Dynamic Programic, Because we can see the overlapping subproblem.
+
+Distict States in Dp;
+1. No of positions.
+i.e   A B C D
+      0 0 0 0
+      0 0 0 1
+      0 0 1 0
+      ..
+      ..
+      1 1 1 1
+    which is 2^n;
+2. Values of Node.
+
+so in this case we will make 2d array of dp with 
+int dp[2^n][n];
+
+And initially we will initialize dp with -1;
+
+and if the state is revisited we will return dp[mask][pos];
+
+
+
+
  ``` 
 
 ## Cycle Detection In Graph

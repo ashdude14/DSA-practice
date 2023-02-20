@@ -12,6 +12,7 @@ int graph[4][4]={
 };
 // All cities visited
 int All =(1<<n)-1;
+int dp[16][4];
 
 int tsp(int mask,int pos)
 {
@@ -40,13 +41,37 @@ int tsp(int mask,int pos)
 
 }
 
+int tsp_dp(int mask,int pos)
+{
+    if(mask==All)
+    {
+        return graph[pos][0];
+    }
+    if(dp[mask][pos]!=-1)
+    return dp[mask][pos];
 
+    int ans=99999;
+    // traveling unvisited cities
+    for(int city=0;city<n;city++){
+    if((mask&(1<<city))==0){
+
+        int newAns=graph[pos][city]+tsp(mask|(1<<city),city);
+        ans=min(ans,newAns);
+    }
+
+    }
+
+    return dp[mask][pos]=ans;
+
+}
 int main ()
 {
-
-
+  
+   for(int i=0;i<(1<<n);i++)
+   for(int j=0;j<n;j++)
+   dp[i][j]=-1;
     cout<<tsp(1,0)<<endl;
-    cout<<All;
+    cout<<"min weight hamiltonion cycle is "<<tsp_dp(1,0)<<endl;
     //              /A\ 001 = 1 (visited A at starting)
         //         /   \
 //                B     C 
